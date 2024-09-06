@@ -6,8 +6,9 @@
 trigger:
 - master
 
-pool:
-  vmImage: ubuntu-latest
+variables:
+  configuration: release
+  agentpool: 'Self_Hosted'
 
 steps:
 - task: NodeTool@0
