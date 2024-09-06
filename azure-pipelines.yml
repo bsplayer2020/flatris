@@ -10,6 +10,8 @@ variables:
   configuration: release
   agentpool: 'Self_Hosted'
 
+pool: $(agentpool)
+
 steps:
 - task: NodeTool@0
   inputs:
